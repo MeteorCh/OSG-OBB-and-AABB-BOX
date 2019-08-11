@@ -25,7 +25,7 @@ osg::ref_ptr<osg::Geode> createBoundingBox(osg::Vec3 center,float lenx,float len
 	osg::ref_ptr<osg::PolygonMode> polygon = new osg::PolygonMode(osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE);
 	stateset->setAttributeAndModes(polygon);
 	//设置线宽
-	osg::ref_ptr<osg::LineWidth> linewidth = new osg::LineWidth(1.0);
+	osg::ref_ptr<osg::LineWidth> linewidth = new osg::LineWidth(1.5);
 	stateset->setAttribute(linewidth);
 	geode->addDrawable(drawable);
 	return geode;
@@ -95,7 +95,7 @@ osg::ref_ptr<osg::Geode> createOBBBox(render_system::OBB obb)
 	osg::ref_ptr<osg::PolygonMode> polygon = new osg::PolygonMode(osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE);
 	stateset->setAttributeAndModes(polygon);
 	//设置线宽
-	osg::ref_ptr<osg::LineWidth> linewidth = new osg::LineWidth(1.0);
+	osg::ref_ptr<osg::LineWidth> linewidth = new osg::LineWidth(1.5);
 	stateset->setAttribute(linewidth);
 	int pntNum = sizeof(elements) / sizeof(GLuint);
 	osg::ref_ptr<osg::DrawElementsUInt> elementsArray = new osg::DrawElementsUInt(osg::PrimitiveSet::TRIANGLES, pntNum,elements);
