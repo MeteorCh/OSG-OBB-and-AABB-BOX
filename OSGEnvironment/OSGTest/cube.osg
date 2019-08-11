@@ -1,0 +1,26 @@
+Geode {
+  UniqueID Geode_0
+  nodeMask 0xffffffff
+  cullingActive TRUE
+  num_drawables 1
+  ShapeDrawable {
+    StateSet {
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      PolygonMode {
+        mode FRONT_AND_BACK LINE
+      }
+      LineWidth {
+        width 3
+      }
+    }
+    Box {
+      Center 0.000999451 0.000999451 106.101
+      HalfLengths 36.95 32 11.7
+      Rotation 0 0 0 1
+    }
+    useDisplayList TRUE
+    useVertexBufferObjects FALSE
+    color 1 1 0 1
+  }
+}
